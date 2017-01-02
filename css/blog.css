@@ -214,7 +214,7 @@ section {
 /* STUPID ASS INSTAGRAM SHIT THAT WON'T WORK */
 /* GRAMMAR MATTERS! */
 #instafeed2 {
-	padding: 25px 0;
+	padding: 0 0;
 	width: 100%;
 }
 div .nudes {
@@ -244,4 +244,9 @@ div .nudes {
 .shadow {
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	position: relative;
+}
+.instashadow {
+	padding: 0;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	
 }

@@ -98,10 +98,9 @@
         </div>
       </div>
     </div>
-    <div id="instafeed2"></div>
   </div>
 </section>
-<section id="recent" class="bg-primary shadow">
+<section id="recent" class="bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -230,7 +229,7 @@
   </div>
   <!-- /.container --> 
 </section>
-<section>
+<section class="shadow">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -241,6 +240,9 @@
     </div>
   </div>
 </section>
+<section class="instashadow">
+  <div id="instafeed2"></div>
+	</section>
 <section class="well">
   <div class="container">
     <div class="row">
@@ -331,9 +333,9 @@
             $("#instafeed4").html(imgs.slice(9, 10));
             $("#instafeed5").html(imgs.slice(10, 11));
         },
-		filter: function(image) {
-           return image.tags.indexOf('delsol') >= 0;
-        }
+		//filter: function(image) {
+        //   return image.tags.indexOf('delsol') >= 0;
+      //  }
     });
     feed.run();
 </script>
