@@ -6,6 +6,7 @@ html, body {
 	height: 100%;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 16px;
+	background-color: #f4f4f4;
 }
 a {
 	-webkit-transition: all .35s;
@@ -77,19 +78,18 @@ header .header-content .inner p {
 	font-size: 2rem;
 }
 article:nth-child(even) {
-	background: #f5f5f5;
 	padding: 25px;
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
 }
 article:nth-child(odd) {
-	background: #F1f1f1;
 	padding: 25px;
 	-webkit-animation-name: fadeInRight;
 	animation-name: fadeInRight;
 }
 article {
 	border-bottom: #B3B3B3 1px solid;
+	background-color: #fff;
 }
 .blog-post-title {
 	margin-bottom: .25rem;
