@@ -100,6 +100,9 @@
     </div>
   </div>
 </section>
+<section>
+<div id="instafeed2" class=""></div>
+	</section>
 <section id="recent" class="bg-primary">
   <div class="container">
     <div class="row">
@@ -126,7 +129,6 @@
             <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
         </article>
-        <div id="instafeed2" class=""></div>
         <!-- /.blog-post -->
         <article>
           <div class="blog-post">
@@ -312,7 +314,7 @@
 		sortBy: 'random',
 		limit: 20,
 		resolution: 'standard_resolution',
-		template: '<article style="background-image:url({{image}};" class="nudes"><p class="instanowork"></p></article>',
+		template: '<div style="background-image:url({{image}};" class="nudes"><p class="instanowork"></p></div>',
 		//template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
 		success: function (data) {
             // read the feed data and create owr own data struture.
@@ -329,7 +331,7 @@
                 imgs.push(result);
             }
             //split the feed into divs
-            $("#instafeed2").html(imgs.slice(0, 1));
+            $("#instafeed2").html(imgs.slice(0, 10));
             $("#instafeed3").html(imgs.slice(1, 2));
             $("#instafeed4").html(imgs.slice(2, 3));
             $("#instafeed5").html(imgs.slice(3, 4));
