@@ -213,7 +213,9 @@ section {
 }
 /* STUPID ASS INSTAGRAM SHIT THAT WON'T WORK */
 /* GRAMMAR MATTERS! */
-#instafeed {
+#instafeed2 {
+	padding: 25px 0;
+	width: 100%;
 }
 div .nudes {
 	position: relative;
@@ -223,6 +225,7 @@ div .nudes {
 	background-attachment: scroll;
 	width: 25%;
 	height: 200px;
+	
 }
 .instanowork {
 }
