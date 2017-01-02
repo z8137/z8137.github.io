@@ -1,0 +1,244 @@
+/*CUSTOM SHIT*/
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+a {
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s;
+}
+#video-background {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 1;
+}
+.btn.btn-primary {
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s
+}
+.btn-default {
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s
+}
+.bg-primary {
+	color: #373737;
+	background-color: #f5f5f5;
+}
+header {
+	position: relative;
+	min-height: auto;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	background-image: url('https://placekitten.com/g/1920/1080');
+	background-attachment: fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.glass::before {
+	background-image: url('https://placekitten.com/g/1920/1080');
+	background-attachment: fixed;
+}
+header .header-content {
+	position: relative;
+	width: 100%;
+	padding: 100px 15px;
+	text-align: center;
+	z-index: 2;
+}
+header .header-content .inner h1 {
+	margin-top: 0;
+	margin-bottom: 0
+}
+header .header-content .inner p {
+	margin-bottom: 50px;
+	font-size: 16px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.7)
+}
+/* SOME HOODRAT BACKGROUND COLORING SHIT */
+/* I DON'T EVEN KNOW IF THIS WILL WORK */
+.h2, h2 {
+	font-size: 2rem;
+}
+article:nth-child(even) {
+	background: #f5f5f5;
+	padding: 25px;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+article:nth-child(odd) {
+	background: #F1f1f1;
+	padding: 25px;
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+article {
+	border-bottom: #B3B3B3 1px solid;
+}
+.blog-post-title {
+	margin-bottom: .25rem;
+	font-size: 2.5rem;
+}
+/*.blog-post {
+	margin-bottom: 4rem;
+}*/
+.blog-post-meta {
+	margin-bottom: 1.25rem;
+	color: #999;
+}
+.post-cover {
+	display: inline;
+	float: left;
+	margin: 0 4% 2% 0;
+}
+.post-content p {
+	margin: 10px 0;
+}
+/* ANIMATING SOME STUPID SHIT THAT WONT WORK */
+.cursive {
+	font-family: 'Dancing Script', cursive;
+	text-transform: none;
+}
+
+/* RESPONSIVE SHIT */
+@media(min-width:768px) {
+/* I REALLY DON'T KNOW */
+/* GRAMMAR MATTERS, MOTHERFUCKERS! */
+header {
+	min-height: 100%
+}
+header .header-content {
+	position: absolute;
+	top: 50%;
+	padding: 0 50px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+header .header-content .inner {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1000px
+}
+header .header-content .inner h1 {
+	font-size: 53px
+}
+header .header-content .inner p {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 80%;
+	font-size: 18px
+}
+section {
+	padding: 50px 0;
+}
+/* CHANGE SOME NAV SHIT */
+.navbar-default {
+	min-height: 60px;
+}
+.navbar-header>.navbar-brand {
+	color: rgba();
+	padding: 19px
+}
+.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
+/*color: #f4f4f4*/
+}
+.navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
+	color: rgba();
+	padding: 20px;
+	letter-spacing: 1.1px;/*text-shadow: 1px 1px 1px rgba(60,60,60,0.7)*/
+}
+.navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus:hover {
+/*color: #fefefe*/
+}
+/*BLUR SOME SHIT */
+.glass::before {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.glass {
+	position: relative;
+}
+.glass::before {
+	z-index: 2;
+	display: block;
+	position: absolute;
+	content: ' ';
+}
+.glass::before {
+	background-position: center;
+	/* Prefix free isn't picking up this one */
+	-webkit-filter: url('#blur');
+	filter: url('#blur');
+	-webkit-filter: blur(7px);
+	filter: blur(7px);
+	background-size: cover;
+	opacity: 0.78;
+}
+.glass {
+	background-color: #666666;
+}
+}
+
+/* MAKING IT ALL DISAPPEAR */
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 320px) {
+.posts-archive-post {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.post-meta {
+	line-height: 1.75em;
+}
+.post-cover {
+	display: none;
+}
+}
+/* STUPID ASS INSTAGRAM SHIT THAT WON'T WORK */
+/* GRAMMAR MATTERS! */
+#instafeed {
+}
+div .nudes {
+	position: relative;
+	display: inline-block;
+	background-size: auto 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 650px;
+}
+.instanowork {
+	z-index: -1;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color:rgba(35,35,35,0.84)
+}
+.instanowork::after{
+	content: "IF YOU DONT SEE PICTURES HERE THEN I FUCKED UP AND THIS SHIT DOESN'T WORK!";
+}
+/*SOME STUPID SHADOW MAGIC*/
+.shadow {
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+	position: relative;
+}
