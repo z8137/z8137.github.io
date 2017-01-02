@@ -330,10 +330,10 @@
             $("#instafeed3").html(imgs.slice(8, 9));
             $("#instafeed4").html(imgs.slice(9, 10));
             $("#instafeed5").html(imgs.slice(10, 11));
+        },
+		filter: function(image) {
+           return image.tags.indexOf('delsol') >= 0;
         }
-		//filter: function(image) {
-        //   return image.tags.indexOf('delsol') >= 0;
-        //}
     });
     feed.run();
 </script>
