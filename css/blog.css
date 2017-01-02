@@ -219,6 +219,7 @@ div .nudes {
 	position: relative;
 	display: inline-block;
 	background-size: cover;
+	background-position: center center;
 	background-attachment: scroll;
 	width: 100%;
 	height: 200px;
