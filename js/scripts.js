@@ -33,6 +33,7 @@ $(function() {
 // SOME STUPID NAVIGATION SHIT I DIDN'T MAKE BUT MAKES MY WEBSITE LOOK COOL
 
 ;(function($, window, document, undefined) {
+	"use strict";
   var pluginName = 'autoHidingNavbar',
       $window = $(window),
       $document = $(document),

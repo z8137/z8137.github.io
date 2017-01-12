@@ -1,17 +1,41 @@
 /*CUSTOM SHIT*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic);
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
+/*--------------------------------------
+    elements
+--------------------------------------*/
 html, body {
 	width: 100%;
 	height: 100%;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 16px;
-	background-color: #f4f4f4;
+	font-family: 'Open Sans', sans-serif;
+	background: #F4F4F4;
+}
+span, p, input {
+	font-family: 'Merriweather', serif;
+	line-height: 26px;
+}
+img {
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
 }
 a {
+	text-decoration: none;
+	display: inline-block;
 	-webkit-transition: all .35s;
 	-moz-transition: all .35s;
 	transition: all .35s;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+.media .media-left {
+	float: left;
 }
 #video-background {
 	position: absolute;
@@ -23,21 +47,7 @@ a {
 	height: auto;
 	z-index: 1;
 }
-.btn.btn-primary {
-	-webkit-transition: all .35s;
-	-moz-transition: all .35s;
-	transition: all .35s
-}
-.btn-default {
-	-webkit-transition: all .35s;
-	-moz-transition: all .35s;
-	transition: all .35s
-}
-.bg-primary {
-	color: #373737;
-	background-color: #f5f5f5;
-}
-header {
+#first {
 	position: relative;
 	min-height: auto;
 	text-align: center;
@@ -55,18 +65,18 @@ header {
 	background-image: url('../images/idk.jpg');
 	background-attachment: fixed;
 }
-header .header-content {
+#first .header-content {
 	position: relative;
 	width: 100%;
 	padding: 100px 15px;
 	text-align: center;
 	z-index: 2;
 }
-header .header-content .inner h1 {
+#first .header-content .inner h1 {
 	margin-top: 0;
 	margin-bottom: 0
 }
-header .header-content .inner p {
+#first .header-content .inner p {
 	margin-bottom: 50px;
 	font-size: 16px;
 	font-weight: 300;
@@ -74,41 +84,240 @@ header .header-content .inner p {
 }
 /* SOME HOODRAT BACKGROUND COLORING SHIT */
 /* I DON'T EVEN KNOW IF THIS WILL WORK */
-.h2, h2 {
-	font-size: 2rem;
-}
-article:nth-child(even) {
-	padding: 25px;
+div:nth-child(even).wow {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
+	animation-delay: .3s;
 }
-article:nth-child(odd) {
-	padding: 25px;
-	-webkit-animation-name: fadeInRight;
-	animation-name: fadeInRight;
+div:nth-child(odd).wow {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	animation-delay: .3s;
+}
+.post {
+	background: #fff;
+	margin-bottom: 50px;
 }
 article {
-	border-bottom: #B3B3B3 1px solid;
-	background-color: #fff;
+	border: 1px solid #eee;
 }
-.blog-post-title {
-	margin-bottom: .25rem;
-	font-size: 2.5rem;
+.post-thumb {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
-/*.blog-post {
-	margin-bottom: 4rem;
-}*/
-.blog-post-meta {
-	margin-bottom: 1.25rem;
-	color: #999;
+.post-thumb:hover .post-thumb-overlay {
+	opacity: 1;
 }
-.post-cover {
-	display: inline;
-	float: left;
-	margin: 0 4% 2% 0;
+.post-thumb-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	overflow: hidden;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
-.post-content p {
-	margin: 10px 0;
+.post-thumb-overlay div {
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	width: 132px;
+	border: 1px solid #fff;
+	line-height: 40px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+	position: relative;
+	top: 50%;
+	letter-spacing: 1px;
+	margin: 5px;
+	margin-top: -18px;
+	text-transform: uppercase;
+}
+.post-thumb img {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+}
+.post-content {
+	padding: 0 43px;
+	overflow: hidden;
+}
+/* ===============
+post css
+ ===================*/
+.main-content {
+	margin-top: 50px;
+}
+article {
+	border: 1px solid #eee;
+}
+.entry-header {
+	margin: 40px 0 23px;
+}
+.entry-header h1 a, .entry-header h6 a {
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+.entry-header h1 {
+	margin-top: 0;
+	font-size: 24px;
+}
+.entry-header h6 {
+}
+.entry-header h6 a {
+	color: #00acdf;
+	font-weight: 700;
+	font-size: 10px;
+}
+.entry-header h1 a {
+	font-weight: 600;
+	color: #333333;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	font-size: 24px;
+	line-height: 34px;
+}
+.entry-header h1 a:hover {
+	color: #00acdf;
+}
+.post-thumb img {
+	width: 100%;
+}
+a.more-link {
+	font-size: 12px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 24px 0 28px;
+	display: inline-block;
+	color: #00BFF3;
+	border: 1px solid #eee;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+a.more-link:hover {
+	background: #00BFF3;
+	color: #fff;
+	border-color: #00BFF3;
+}
+.post {
+	background: #fff;
+	margin-bottom: 50px;
+}
+.post-content {
+	padding: 0 43px;
+	overflow: hidden;
+}
+.post .social-share {
+	border-top: 1px solid #EEE;
+	padding: 15px 0 75px;
+}
+.social-share span a {
+	color: #333;
+}
+.social-share-title {
+	padding: 9px 0;
+	font-style: italic;
+	font-size: 13px;
+}
+.social-share span a:hover {
+	color: #00BFF3;
+	text-decoration: none;
+}
+.post-thumb {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.post-thumb:hover .post-thumb-overlay {
+	opacity: 1;
+}
+.post-thumb-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	overflow: hidden;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+.post-thumb-overlay div {
+	color: #fff;
+	display: inline-block;
+	height: 40px;
+	width: 132px;
+	border: 1px solid #fff;
+	line-height: 40px;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+	position: relative;
+	top: 50%;
+	letter-spacing: 1px;
+	margin: 5px;
+	margin-top: -18px;
+	text-transform: uppercase;
+}
+/*=======
+post grid
+=========*/
+.post-grid .post-content {
+	padding: 0 30px;
+	overflow: hidden;
+}
+.post-grid .entry-header {
+	margin: 31px 0 20px;
+}
+.post-grid .entry-header h1, .post-list .entry-header h1 {
+	margin: 0;
+	line-height: 24px;
+}
+.post-grid .entry-header h1 a, .post-list .entry-header h1 a {
+	font-size: 18px;
+	line-height: 24px;
+}
+.post-grid .social-share, .post-list .social-share {
+	border: 0;
+	padding: 0 0 40px;
+}
+.post-grid .social-share-title {
+	padding: 10px 0 30px;
+	font-style: italic;
+	font-size: 13px;
 }
 /* ANIMATING SOME STUPID SHIT THAT WONT WORK */
 .cursive {
@@ -120,10 +329,10 @@ article {
 @media(min-width:768px) {
 /* I REALLY DON'T KNOW */
 /* GRAMMAR MATTERS, MOTHERFUCKERS! */
-header {
-	min-height: 100%
+#first {
+	min-height: 100%;
 }
-header .header-content {
+#first .header-content {
 	position: absolute;
 	top: 50%;
 	padding: 0 50px;
@@ -131,15 +340,15 @@ header .header-content {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%)
 }
-header .header-content .inner {
+#first .header-content .inner {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 1000px
 }
-header .header-content .inner h1 {
+#first .header-content .inner h1 {
 	font-size: 53px
 }
-header .header-content .inner p {
+#first .header-content .inner p {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 80%;
@@ -149,24 +358,7 @@ section {
 	padding: 50px 0;
 }
 /* CHANGE SOME NAV SHIT */
-.navbar-default {
-	min-height: 60px;
-}
-.navbar-header>.navbar-brand {
-	color: rgba();
-	padding: 19px
-}
-.navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
-/*color: #f4f4f4*/
-}
-.navbar-default .nav>li>a, .navbar-default .nav>li>a:focus {
-	color: rgba();
-	padding: 20px;
-	letter-spacing: 1.1px;/*text-shadow: 1px 1px 1px rgba(60,60,60,0.7)*/
-}
-.navbar-default .nav>li>a:hover, .navbar-default .nav>li>a:focus:hover {
-/*color: #fefefe*/
-}
+
 /*BLUR SOME SHIT */
 .glass::before {
 	width: 100%;
@@ -191,31 +383,27 @@ section {
 	filter: blur(7px);
 	background-size: cover;
 	opacity: 0.78;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 .glass {
 	background-color: #666666;
 }
 }
-
-/* MAKING IT ALL DISAPPEAR */
-/* All Mobile Sizes (devices and browser) */
-@media screen and (max-width: 320px) {
-.posts-archive-post {
-	margin-bottom: 15px;
-	padding-bottom: 15px;
+section.bg-primary {
+	background-color: #ffffff;
+	color: #1B1B1B;
 }
-.post-meta {
-	line-height: 1.75em;
-}
-.post-cover {
-	display: none;
-}
+section.bg-secondary {
+	background-color: #303030;
+	color: #C2C2C2;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 /* STUPID ASS INSTAGRAM SHIT THAT WON'T WORK */
 /* GRAMMAR MATTERS! */
 #instafeed2 {
-	padding: 0 0;
+	padding: 25px 0;
 	width: 100%;
+	
 }
 div .nudes {
 	position: relative;
@@ -225,20 +413,20 @@ div .nudes {
 	background-attachment: scroll;
 	width: 25%;
 	height: 200px;
-	
 }
 .instanowork {
 }
-.nudes::after{
+div .nudes::after {
 	content: "IF YOU DONT SEE PICTURES HERE THEN I FUCKED UP AND THIS SHIT DOESN'T WORK!";
 	z-index: -1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    color:rgba(35,35,35,0.84);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 25%;
+	text-align: center;
+	font-size: 24px;
+	color: rgba(35,35,35,0.84);
 }
 /*SOME STUPID SHADOW MAGIC*/
 .shadow {
@@ -248,5 +436,4 @@ div .nudes {
 .instashadow {
 	padding: 0;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-	
 }

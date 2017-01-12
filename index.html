@@ -7,8 +7,9 @@
 <title>Bootstrap Portfolio template</title>
 
 <!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/blog.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/animate.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,7 +33,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#info" class="page-scroll">About <span class="sr-only">(current)</span></a></li>
           <li><a href="#recent" class="page-scroll">Link</a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Projects <span class="caret"></span></a>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Projects <i class="fa fa-angle-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="#" class="page-scroll">Slut #1</a></li>
               <li><a href="#" class="page-scroll">Slut #2</a></li>
@@ -62,7 +63,7 @@
             <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/NYC-Blurred-Traffic.mp4" type="video/mp4">
             Your browser does not support the video tag. I suggest you upgrade your browser. </video>--> 
 </header>
-<section id="info" class="shadow">
+<section id="info" class="shadow bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -100,7 +101,7 @@
     </div>
   </div>
 </section>
-<section id="recent" class="bg-primary">
+<section id="recent">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -109,83 +110,109 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8 blog-main">
-        <article>
-          <div class="blog-post">
-            <div class="post-cover"><img src="https://placekitten.com/g/200/200" class="thumbnail"></div>
-            <h2 class="blog-post-title">Super fake news about Donald Trump</h2>
-            <p class="post-meta">
-              <time datetime="2016-12-19" pubdate="">September 11, 2001</time>
-              — <span class="category"><a href="" rel="category tag">BULLSHIT CATERGORY</a></span> — <a href="">0 comments</a> </p>
-            <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-            <hr>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+      <div class="col-md-8">
+        <article class="post">
+          <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+            <div class="text-uppercase text-center">View Post</div>
+            </a> </div>
+          <div class="post-content">
+            <header class="entry-header text-center text-uppercase">
+              <h6><a href="#"> Travel</a></h6>
+              <h1 class="entry-title"><a href="blog.html">Super fake news about Donald Trump</a></h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+            <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By George Bush On September 11, 2001</span> </div>
           </div>
         </article>
         <!-- /.blog-post -->
-        <article>
-          <div class="blog-post">
-            <div class="post-cover"><img src="https://placekitten.com/g/200/200" class="thumbnail"></div>
-            <h2 class="blog-post-title">Another fake news announcement about Donald Trump</h2>
-            <p class="post-meta">
-              <time datetime="2016-12-19" pubdate="">December 31, 2016</time>
-              — <span class="category"><a href="" rel="category tag">PUSSYCAT CATEGORY</a></span> — <a href="">0 comments</a> </p>
-            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-            <blockquote>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </blockquote>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-          </div>
-        </article>
-        <!-- /.blog-post -->
-        <article>
-          <div class="blog-post">
-            <div class="post-cover"><img src="https://placekitten.com/g/200/200" class="thumbnail"></div>
-            <div class="post-content">
-              <h2 class="blog-post-title">Hillary Killed Harambe 2k16</h2>
-              <p class="post-meta">
-                <time datetime="2016-12-19" pubdate="">April 20, 2017</time>
-                — <span class="category"><a href="" rel="category tag">Of the Sun BITCH</a></span> — <a href="">0 comments</a> </p>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <ul>
-                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                <li>Nulla vitae elit libero, a pharetra augue.</li>
-              </ul>
-              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            </div>
-          </div>
-        </article>
-        <!-- /.blog-post -->
-        <article>
-          <div class="blog-post">
-            <div class="post-content">
-              <h2 class="blog-post-title">Video proof that Hillary kill Harambe 2k16</h2>
-              <p class="post-meta">
-                <time datetime="2016-12-19" pubdate="">April 20, 2016</time>
-                — <span class="category"><a href="" rel="category tag">Prince Harambe</a></span> — <a href="">0 comments</a> </p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bYpp6GaBRW8"></iframe>
+        <div class="row">
+          <div class="col-md-6 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">Trump</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">More fake news about Donald Trump</a></h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Obama On December 31, 2016</span> </div>
               </div>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <ul>
-                <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-                <li>Donec id elit non mi porta gravida at eget metus.</li>
-                <li>Nulla vitae elit libero, a pharetra augue.</li>
-              </ul>
-              <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-            </div>
+            </article>
           </div>
-        </article>
-        <!-- /.blog-post -->
-        
+          <!-- /.blog-post -->
+          <div class="col-md-6 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">Killary</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Hillary killed Harambe 2k16</a></h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Killary On April 20, 2017</span> </div>
+              </div>
+            </article>
+          </div>
+          <!-- /.blog-post -->
+          <div class="col-md-6 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">Killary</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Video proof that Hillary killed Harambe</a></h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Harambe On July 4, 2017</span> </div>
+              </div>
+            </article>
+          </div>
+          <!-- /.blog-post -->
+          <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">#ghettoasfuck</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Waterbury thief gets beat up inside Mall foodcourt</a></h1>
+                </header>
+                <div class="entry-content">
+                  <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                  <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By iDoctor On January 11, 2017</span> </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- /.blog-post -->
+          <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">General Gibberish</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Your mom is my dot com</a></h1>
+                </header>
+                <div class="entry-content">
+                  <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore
+                    et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo
+                    dlores rebum. Stet clita kasd gubergren </p>
+                  <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Yourmom.com On February 12, 2016</span> </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- /.blog-post -->
+        </div>
         <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
       </div>
       <!-- /.blog-main -->
@@ -229,7 +256,7 @@
   </div>
   <!-- /.container --> 
 </section>
-<section class="shadow">
+<section class="shadow bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -239,11 +266,9 @@
       </div>
     </div>
   </div>
-</section>
-<section class="instashadow">
   <div id="instafeed2"></div>
-	</section>
-<section class="well">
+</section>
+<section class="bg-secondary">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4">
@@ -285,19 +310,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/scripts.js"></script> 
-<script src="js/pongstagr.am.js"></script> 
-<script>$("div.navbar-fixed-top").autoHidingNavbar();</script>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" display="none">
-  <defs>
-    <filter id="blur">
-      <fegaussianblur stdDeviation="5" />
-    </filter>
-  </defs>
-</svg>
-<!-- STUPID ASS SHIT TO MAKE STUPID ASS SHIT WORK --> 
+<script src="js/menu.js"></script> 
+<script src="js/insta.js"></script> 
+<script>$("div.navbar-fixed-top").autoHidingNavbar();</script> 
 <script type="text/javascript">
     //accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
     //clientID: '7908560b89b64273af7007b4c336188a'
@@ -309,8 +327,8 @@
         clientId: '7908560b89b64273af7007b4c336188a',
 		accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
 		sortBy: 'most-recent',
-		limit: 20,
 		resolution: 'standard_resolution',
+		limit: 20,
 		template: '<div style="background-image:url({{image}};" class="nudes"></div>',
 		//template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
 		success: function (data) {
@@ -327,17 +345,21 @@
                 });
                 imgs.push(result);
             }
-            //split the feed into divs
+            // split the feed into divs
             $("#instafeed2").html(imgs.slice(0, 8));
             $("#instafeed3").html(imgs.slice(8, 9));
             $("#instafeed4").html(imgs.slice(9, 10));
             $("#instafeed5").html(imgs.slice(10, 11));
         },
-		//filter: function(image) {
-        //   return image.tags.indexOf('delsol') >= 0;
-      //  }
     });
     feed.run();
 </script>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" display="none">
+  <defs>
+    <filter id="blur">
+      <fegaussianblur stdDeviation="5" />
+    </filter>
+  </defs>
+</svg>
 </body>
 </html>
