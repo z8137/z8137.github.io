@@ -7,11 +7,11 @@
 <title>Bootstrap Portfolio template</title>
 
 <!-- Bootstrap -->
-<link rel="stylesheet" href="css/blog.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/fonts.css">
-<link rel="stylesheet" href="css/animate.css">
-
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/fonts.css" type="text/css">
+<link rel="stylesheet" href="css/animate.css" type="text/css">
+<link rel="stylesheet" href="css/blog.css" type="text/css">
+<link rel="stylesheet" href="css/response.css" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -22,31 +22,89 @@
 
 <body>
 <div class="navbar-fixed-top">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid"> 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand page-scroll" href="#first">Del Sol</a> </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="myDefaultNavbar1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#info" class="page-scroll">About <span class="sr-only">(current)</span></a></li>
-          <li><a href="#recent" class="page-scroll">Link</a></li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Projects <i class="fa fa-angle-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#" class="page-scroll">Slut #1</a></li>
-              <li><a href="#" class="page-scroll">Slut #2</a></li>
-              <li><a href="#" class="page-scroll">Slut #3</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>
+  <div style="display:none;" display="none">
+    <nav class="navbar main-menu navbar-default">
+      <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDefaultNavbar1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand page-scroll" href="#first">Del Sol</a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="myDefaultNavbar1">
+          <ul class="nav navbar-nav text-uppercase">
+            <li class="active"><a href="#info" class="page-scroll">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="#recent" class="page-scroll">Recent Posts</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Projects <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="page-scroll">Slut #1</a></li>
+                <li><a href="#" class="page-scroll">Slut #2</a></li>
+                <li><a href="#" class="page-scroll">Slut #3</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse --> 
       </div>
-      <!-- /.navbar-collapse --> 
+      <!-- /.container-fluid --> 
+    </nav>
+  </div>
+  <nav class="navbar main-menu navbar-default">
+    <div class="container">
+      <div class="menu-content"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a class="navbar-brand" href="#"><img src="images/blah.png" /></a></div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav text-uppercase">
+            <li><a data-toggle="dropdown" class="dropdown-toggle" href="#">Home <i
+                            class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item-has-children"><a href="">Categories<i
+                                    class="fa fa-angle-right"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Pussycat</a></li>
+                    <li><a href="#">#dicksoutfordakota</a></li>
+                    <li><a href="#">#titsoutfordakota</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Bush did 9/11</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Projects<i class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="#">Sloot #1</a></li>
+                <li><a href="#">Sloot #2</a></li>
+                <li><a href="#">Sloot #3</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a data-toggle="dropdown" class="dropdown-toggle" href="#">DSG Fam<i class="fa fa-angle-down"></i></a>
+              <ul class="sub-menu">
+				  <li><a href="#">YOUR MOM HERE</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Recent</a></li>
+            <li><a href="#">ABOUT ME </a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <div class="i_con"> <a href="https://twitter.com/z8137"><i class="active fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a><a href="https://instagram.com/_z8137"><i class="fa fa-instagram"></i></a>
+            <div class="top-search"> <a href="#"><i class="fa fa-search"></i></a> </div>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+        <div class="show-search">
+          <form role="search" method="get" id="searchform" action="#">
+            <div>
+              <input type="text" placeholder="Search and hit enter..." name="s" id="s">
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <!-- /.container-fluid --> 
   </nav>
@@ -189,7 +247,7 @@
                   <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By iDoctor On January 11, 2017</span> </div>
                 </div>
               </div>
-			  </article>
+            </article>
           </div>
           <!-- /.blog-post -->
           <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
@@ -211,7 +269,7 @@
               </div>
             </article>
           </div>
-          <!-- /.blog-post -->
+          <!-- /.blog-post --> 
         </div>
         <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
       </div>

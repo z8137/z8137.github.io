@@ -241,5 +241,14 @@ $(function() {
     }
 
   };
+	/* === Search === */
+
+    (function () {
+        $('.top-search a').on('click', function (e) {
+            e.preventDefault();
+            $('.show-search').slideToggle('fast');
+            $('.top-search a').toggleClass('sactive');
+        });
+    }());
 
 })(jQuery, window, document);
