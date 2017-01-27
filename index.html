@@ -176,9 +176,7 @@
               <h1 class="entry-title"><a href="blog.html">Super fake news about Donald Trump</a></h1>
             </header>
             <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
-            <div class="btn-continue-reading text-center text-uppercase">
-                                <a href="blog.html" class="more-link">Continue Reading</a>
-                            </div>
+            <div class="btn-continue-reading text-center text-uppercase"> <a href="blog.html" class="more-link">Continue Reading</a> </div>
             <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By George Bush On September 11, 2001</span> </div>
           </div>
         </article>
@@ -269,7 +267,7 @@
               </div>
             </article>
           </div>
-          <!-- /.blog-post --> 
+          <!-- /.blog-post -->
           <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
@@ -334,17 +332,16 @@
   </div>
   <!-- /.container --> 
 </section>
-<section class="shadow bg-primary">
+<section class="bg-primary instagram">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore dicta.</p>
-        <button type="button" class="btn btn-success">Get in touch</button>
+        <h1>Instagram</h1>
       </div>
     </div>
   </div>
-  <div id="instafeed2"></div>
+    <div id="instafeed2" class="row"></div>
+    <!--<img src="https://placekitten.com/g/500/500"  width="25%" height="250px" /><img src="https://placekitten.com/g/500/500"  width="25%" height="250px" /><img src="https://placekitten.com/g/500/500"  width="25%" height="250px" /><img src="https://placekitten.com/g/500/500"  width="25%" height="250px" />-->
 </section>
 <section class="bg-secondary">
   <div class="container">
@@ -407,7 +404,8 @@
 		sortBy: 'most-recent',
 		resolution: 'standard_resolution',
 		limit: 20,
-		template: '<div style="background-image:url({{image}};" class="nudes"></div>',
+		//template: '<img src="{{image}}"  width="25%" height="250px" />',
+		template: '<div style="background-image:url({{image}};" class="nudes col-lg-3 col-md-6 col-sm-6"></div>',
 		//template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
 		success: function (data) {
             // read the feed data and create owr own data struture.
