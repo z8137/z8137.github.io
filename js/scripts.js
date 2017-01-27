@@ -241,7 +241,17 @@ $(function() {
     }
 
   };
-	/* === Search === */
+/* === Footer Instagram === */
+
+    (function () {
+        $('#footer-instagram').owlCarousel({
+            items: 8,
+            navigation: false,
+            autoPlay: false,
+            pagination: false
+        });
+    }());
+    /* === Search === */
 
     (function () {
         $('.top-search a').on('click', function (e) {

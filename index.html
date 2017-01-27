@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/fonts.css" type="text/css">
 <link rel="stylesheet" href="css/animate.css" type="text/css">
 <link rel="stylesheet" href="css/response.css" type="text/css">
+<link rel="stylesheet" href="css/owl.css" type="text/css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -340,8 +341,36 @@
       </div>
     </div>
   </div>
-    <div id="instafeed2" class="row"></div>
-    <!--<img src="https://placekitten.com/g/500/500"  width="25%" height="250px" /><img src="https://placekitten.com/g/500/500"  width="25%" height="250px" /><img src="https://placekitten.com/g/500/500"  width="25%" height="250px" /><img src="https://placekitten.com/g/500/500"  width="25%" height="250px" />-->
+  <div id="footer-instagram" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+    <div class="owl-wrapper-outer">
+      <div class="owl-wrapper" style="width: 4560px; left: 0px; display: block;">
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+        <div class="owl-item" style="width: 285px;">
+          <div class="item"> <a href=""><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="bg-secondary">
   <div class="container">
@@ -381,6 +410,7 @@
     </div>
   </div>
 </footer>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
@@ -390,6 +420,7 @@
 <script src="js/scripts.js"></script> 
 <script src="js/menu.js"></script> 
 <script src="js/insta.js"></script> 
+<script src="js/owl.min.js"></script> 
 <script>$("div.navbar-fixed-top").autoHidingNavbar();</script> 
 <script type="text/javascript">
     //accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
@@ -405,7 +436,7 @@
 		resolution: 'standard_resolution',
 		limit: 20,
 		//template: '<img src="{{image}}"  width="25%" height="250px" />',
-		template: '<div style="background-image:url({{image}};" class="nudes col-lg-3 col-md-6 col-sm-6"></div>',
+		template: '<div style="background-image:url({{image}});" class="nudes"> </div>',
 		//template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
 		success: function (data) {
             // read the feed data and create owr own data struture.

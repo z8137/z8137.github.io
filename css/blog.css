@@ -535,28 +535,14 @@ section.bg-primary {
 section.bg-secondary {
 	background-color: #303030;
 	color: #EDEDED;
-	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 /* STUPID ASS INSTAGRAM SHIT THAT WON'T WORK */
 /* GRAMMAR MATTERS! */
-.instagram {
-	padding: 50px 0 0 0;
+section.instagram {
+	padding: 25px 0 0 0;
 }
-#instafeed2 {
-	margin: 25px 0 0 0;
-	height: 750px;
-}
-div .nudes {
-	/*position: relative;
-	display: block;
-	float: left;*/
-	background-size: cover;
-	background-attachment: scroll;
-	height: 50%;
-}
-.instanowork {
-}
-/*div .nudes::after {
+
+div .nudes::after {
 	content: "IF YOU DONT SEE PICTURES HERE THEN I FUCKED UP AND THIS SHIT DOESN'T WORK!";
 	z-index: -1;
 	position: absolute;
@@ -567,15 +553,11 @@ div .nudes {
 	text-align: center;
 	font-size: 24px;
 	color: rgba(35,35,35,0.84);
-}*/
+}
 /*SOME STUPID SHADOW MAGIC*/
 .shadow {
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 	position: relative;
-}
-.instashadow {
-	padding: 0;
-	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
 #first a.scroll {
 	position: absolute;
