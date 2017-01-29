@@ -528,18 +528,24 @@ post grid
 	font-family: 'Dancing Script', cursive;
 	text-transform: none;
 }
-section.bg-primary {
+.bg-primary {
 	background-color: #ffffff;
 	color: #1B1B1B;
 }
-section.bg-secondary {
+.bg-secondary {
 	background-color: #303030;
 	color: #EDEDED;
 }
 /* STUPID ASS INSTAGRAM SHIT THAT WON'T WORK */
 /* GRAMMAR MATTERS! */
 section.instagram {
-	padding: 25px 0 0 0;
+	padding: 0 0 0 0;
+}
+.footer-instagram-title {
+    padding: 35px 0 17px;
+    color: #333333;
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 div .nudes::after {
