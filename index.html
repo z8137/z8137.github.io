@@ -394,69 +394,6 @@
 <script src="js/insta.js"></script> 
 <script src="js/owl.carousel.js"></script> 
 <script>$("div.navbar-fixed-top").autoHidingNavbar();</script> 
-<script type="text/javascript">
-	jQuery( document ).ready(function($) {
-    //accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
-    //clientID: '7908560b89b64273af7007b4c336188a'
-	var imgs = [];
-    var feed = new Instafeed({
-        get: 'user',
-		userId: '29186318',
-        tagName: '',
-        clientId: '7908560b89b64273af7007b4c336188a',
-		accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
-		limit: 16,
-		resolution: 'standard_resolution',
-		template: '<div class="item"><img src="{{image}}" /></div>',
- 		target: 'instafeed',
- 		after: function() {
- 			$('.owl-carousel').owlCarousel({
- 				items:8,
- 				loop:false,
- 				margin:0,
- 				nav: false,
-				dots: false,
-				responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 6
-                },
-                1000: {
-                    items: 8
-                }
-            }
- 			});
-
- 			}
- 	});
-	feed.run();
-});
-		//template: '<div style="background-image:url({{image}});" class="nudes"> </div>',
-//		template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
-		//success: function (data) {
-//            // read the feed data and create owr own data struture.
-//            var images = data.data;
-//            var result;
-//            for (i = 0; i < images.length; i++) {
-//                var image = images[i];
-//                result = this._makeTemplate(this.options.template, {
-//                    model: image,
-//                    id: image.id,
-//                    link: image.link,
-//                    image: image.images[this.options.resolution].url
-//                });
-//                imgs.push(result);
-//            }
-//            // split the feed into divs
-//            $("#footer-instagram").html(imgs.slice(0, 8));
-//            $("#instafeed3").html(imgs.slice(8, 9));
-//            $("#instafeed4").html(imgs.slice(9, 10));
-//            $("#instafeed5").html(imgs.slice(10, 11));
-//        },
-	
-</script>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" display="none">
   <defs>
     <filter id="blur">

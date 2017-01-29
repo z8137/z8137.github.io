@@ -249,6 +249,63 @@ $(function () {
 			$('.top-search a').toggleClass('sactive');
 		});
 	}());
+jQuery( document ).ready(function($) {
+    //accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
+    //clientID: '7908560b89b64273af7007b4c336188a'
+	var imgs = [];
+    var feed = new Instafeed({
+        get: 'user',
+		userId: '29186318',
+        tagName: '',
+        clientId: '7908560b89b64273af7007b4c336188a',
+		accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
+		limit: 8,
+		resolution: 'standard_resolution',
+		template: '<div class="item"><img src="{{image}}" /></div>',
+ 		target: 'instafeed',
+ 		after: function() {
+ 			$('.owl-carousel').owlCarousel({
+ 				items:8,
+ 				loop:false,
+ 				margin:0,
+ 				nav: false,
+				dots: false,
+				mouseDrag: false,
+				touchDrag: false,
+				pullDrag: false,
+				responsive: {
+                	0: {items: 1},
+                	600: {items: 5},
+                	1000: {items: 8}
+            	}
+ 			});
 
+ 			}
+ 	});
+	feed.run();
+});
 })(jQuery, window, document);
+
+//template: '<div style="background-image:url({{image}});" class="nudes"> </div>',
+//		template: '<a href="{{link}}" target="_blank"><img src="{{image}}"/></a>',
+//		success: function (data) {
+//            // read the feed data and create owr own data struture.
+//            var images = data.data;
+//            var result;
+//            for (i = 0; i < images.length; i++) {
+//                var image = images[i];
+//                result = this._makeTemplate(this.options.template, {
+//                    model: image,
+//                    id: image.id,
+//                    link: image.link,
+//                    image: image.images[this.options.resolution].url
+//                });
+//                imgs.push(result);
+//            }
+//            // split the feed into divs
+//            $("#footer-instagram").html(imgs.slice(0, 8));
+//            $("#instafeed3").html(imgs.slice(8, 9));
+//            $("#instafeed4").html(imgs.slice(9, 10));
+//            $("#instafeed5").html(imgs.slice(10, 11));
+//        },
 
