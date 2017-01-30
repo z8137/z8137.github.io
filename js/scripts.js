@@ -259,10 +259,13 @@ jQuery( document ).ready(function($) {
         tagName: '',
         clientId: '7908560b89b64273af7007b4c336188a',
 		accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
-		limit: 8,
+		limit: 24,
 		resolution: 'standard_resolution',
 		template: '<div class="item"><img src="{{image}}" /></div>',
  		target: 'instafeed',
+		//filter: function(image) {
+//            return image.tags.indexOf('delsol') >= 0;
+//        },
  		after: function() {
  			$('.owl-carousel').owlCarousel({
  				items:8,
