@@ -3,6 +3,20 @@
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 /* SAY CHEESE */
+.colfix {
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-bottom: 62.5%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	
+}
+#info {
+	height: 100%;
+}
 /*--------------------------------------
     elements
 --------------------------------------*/
@@ -42,20 +56,20 @@ ul {
 	z-index: 2;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image:url(../images/idk.jpg);
+	background-image: url(../images/idk.jpg);
 	width: 100%;
 	height: 100%;
 	content: ' ';
 	-webkit-filter: url('#blur');
-  	filter: url('#blur');
-  	-webkit-filter: blur(3px);
-  	filter: blur(3px);
+	filter: url('#blur');
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
 }
 .glass {
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	color:#fff;
+	color: #fff;
 	text-align: center;
 }
 .glass::after {
@@ -85,6 +99,7 @@ ul {
 	font-weight: 300;
 	color: rgba(255,255,255,0.7);
 }
+
 /* RESPONSIVE SHIT */
 @media(min-width:768px) {
 /* I REALLY DON'T KNOW */
@@ -176,16 +191,16 @@ header
 	color: #00BFF3;
 }
 .navbar-default .navbar-nav > .active > a {
-    color: #00BFF3;
-    background-color: transparent;
+	color: #00BFF3;
+	background-color: transparent;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
 	color: #00BFF3;
 	background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #00BFF3;
-    background-color: transparent; 
+	color: #00BFF3;
+	background-color: transparent;
 }
 .i_con a i:hover {
 	color: #00BFF3;
@@ -546,12 +561,11 @@ section.instagram {
 	padding: 0 0 0 0;
 }
 .footer-instagram-title {
-    padding: 35px 0 17px;
-    color: #333333;
-    font-size: 18px;
-    letter-spacing: 0.5px;
+	padding: 35px 0 17px;
+	color: #333333;
+	font-size: 18px;
+	letter-spacing: 0.5px;
 }
-
 div .nudes::after {
 	content: "IF YOU DONT SEE PICTURES HERE THEN I FUCKED UP AND THIS SHIT DOESN'T WORK!";
 	z-index: -1;
@@ -586,11 +600,10 @@ div .nudes::after {
 	opacity: .5;
 }
 i.scroll {
-    -webkit-animation: sdb04 2s infinite;
-    animation: sdb04 2s infinite;
+	-webkit-animation: sdb04 2s infinite;
+	animation: sdb04 2s infinite;
 }
-
-@-webkit-keyframes sdb04 {
+ @-webkit-keyframes sdb04 {
  0% {
  -webkit-transform: translate(0, 0);
 }
@@ -620,7 +633,7 @@ footer {
 	font-weight: bold;
 	letter-spacing: 2px;
 }
-footer p{
-    margin: 0;
-    padding: 10px 0;
+footer p {
+	margin: 0;
+	padding: 10px 0;
 }

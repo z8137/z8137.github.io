@@ -250,7 +250,7 @@ $(function () {
 		});
 	}());
 jQuery( document ).ready(function($) {
-    //accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
+    //accessToken: '29186318.7908560.dc30fcb45e6b476d9ecad1f610381912',
     //clientID: '7908560b89b64273af7007b4c336188a'
 	var imgs = [];
     var feed = new Instafeed({
@@ -258,7 +258,7 @@ jQuery( document ).ready(function($) {
 		userId: '29186318',
         tagName: '',
         clientId: '7908560b89b64273af7007b4c336188a',
-		accessToken: '29186318.7908560.9f8e5530ad52483684e0df19b87f1d63',
+		accessToken: '29186318.7908560.dc30fcb45e6b476d9ecad1f610381912',
 		limit: 24,
 		resolution: 'standard_resolution',
 		template: '<div class="item"><img src="{{image}}" /></div>',
