@@ -51,6 +51,7 @@ ul {
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
 }
+
 .glass {
 	position: relative;
 	z-index: 1;
