@@ -626,3 +626,36 @@ footer p {
 }
 
 /* PAGE TOGGLE BULL SHIT */
+
+.post-header::before {
+	position: absolute;
+	display: block;
+	z-index: 2;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	content: ' ';
+	-webkit-filter: url('#blur');
+	filter: url('#blur');
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.post-header {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+.post-header::after {
+	position: absolute;
+	display: block;
+	top: 0;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	content: ' ';
+	background-color: rgba(0,0,0,0.30);
+}
