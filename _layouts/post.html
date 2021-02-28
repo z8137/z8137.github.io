@@ -9,14 +9,14 @@ layout: default
   <div class="post-thumb"> <a href="#"><img src="https://placekitten.com/g/800/500" alt=""></a> </div>
   <div class="post-content">
     <header class="entry-header text-center text-uppercase">
-      <h6><a href="#">{{ post.category }}</a></h6>
+      <h6><a href="#">{{ page.category }}</a></h6>
       <h1 class="entry-title"><a href="#">{{ page.title }}</a></h1>
     </header>
     <div class="entry-content">
       {{ content }}
     </div>
     <div class="decoration"> <a href="#" class="btn btn-default">Decoration</a> <a href="#" class="btn btn-default">Decoration</a> </div>
-    <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ post.author }} On {{ post.date | date: "%B %d, %Y" }}</span>
+    <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ page.author }} On {{ page.date | date: "%B %d, %Y" }}</span>
       <ul class="text-center pull-right">
         <li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
         <li><a class="s-twitter" href=""><i class="fa fa-twitter"></i></a></li>
