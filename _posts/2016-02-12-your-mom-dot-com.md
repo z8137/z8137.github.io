@@ -3,6 +3,7 @@ layout: post
 title: Your mom is my dot com
 category: General Gibberish
 author: Yourmom.com
+thumbnail: https://placekitten.com/g/800/500
 ---
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
 the site to see your changes. You can rebuild the site in many different ways, but
