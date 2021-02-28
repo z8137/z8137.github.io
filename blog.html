@@ -18,7 +18,7 @@ title: Recent Posts
             </header>
             <p>{{ post.excerpt }}</p>
             <div class="btn-continue-reading text-center text-uppercase"> <a href="{{ post.url }}" class="more-link">Continue Reading</a> </div>
-            <div class="social-share"> <span class="social-share-title pull-left text-capitalize">{{ post.date | date: "%d %B %Y" }}</span> </div>
+            <div class="social-share"> <span class="social-share-title pull-left text-capitalize">{{ post.date | date: "%B %d, %Y" }}</span> </div>
           </div>
         </article>
         {% endfor %}-->
@@ -36,7 +36,7 @@ title: Recent Posts
                   <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 </header>
                 <p>{{ post.excerpt }}</p>
-                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Obama On December 31, 2016</span> </div>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ post.author }} On {{ post.date | date: "%B %d, %Y" }}</span> </div>
               </div>
             </article>
           </div>
