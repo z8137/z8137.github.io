@@ -659,3 +659,7 @@ footer p {
 	content: ' ';
 	background-color: rgba(0,0,0,0.30);
 }
+
+#first #post-head {
+	min-height: 30%;
+}
