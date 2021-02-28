@@ -27,7 +27,7 @@ title: Recent Posts
          {% for post in site.posts %}
           <div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
-              <div class="post-thumb"> <a href="{{ post.url }}"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
+              <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
                 <div class="text-uppercase text-center">View Post</div>
                 </a> </div>
               <div class="post-content">

@@ -3,6 +3,7 @@ layout: post
 title: More fake news about Donald Trump
 category: Trump
 author: Obama
+thumbnail: "https://placekitten.com/g/800/500"
 ---
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
 the site to see your changes. You can rebuild the site in many different ways, but
