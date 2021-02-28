@@ -2,23 +2,6 @@
 layout: page
 title: Blog
 ---
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="text-center">
-        <ul style="list-style-position: inside">
-           {% for post in site.posts %}
-             <li>
-               <a href="{{ post.url }}">{{ post.title }}</a>
-               - {{ post.date | date: "%d %B %Y" }}
-               {{ post.excerpt }}
-             </li>
-           {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="recent">
   <div class="container">
     <div class="row">
@@ -31,7 +14,7 @@ title: Blog
           {% for post in site.posts %}
       <div class="col-md-8">
         <article class="post">
-          <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+          <div class="post-thumb"> <a href="{{ post.url }}"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
             <div class="text-uppercase text-center">View Post</div>
             </a> </div>
           <div class="post-content">
@@ -40,7 +23,7 @@ title: Blog
               <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
             </header>
             <p>{{ post.excerpt }}</p>
-            <div class="btn-continue-reading text-center text-uppercase"> <a href="blog.html" class="more-link">Continue Reading</a> </div>
+            <div class="btn-continue-reading text-center text-uppercase"> <a href="{{ post.url }}" class="more-link">Continue Reading</a> </div>
             <div class="social-share"> <span class="social-share-title pull-left text-capitalize">{{ post.date | date: "%d %B %Y" }}</span> </div>
           </div>
         </article>
