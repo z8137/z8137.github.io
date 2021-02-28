@@ -32,7 +32,7 @@ title: Recent Posts
                 </a> </div>
               <div class="post-content">
                 <header class="entry-header text-center text-uppercase">
-                  <h6><a href="#">{{ post.category }}</a></h6>
+                  <h6><a href="{{ post.category.url }}">{{ post.category }}</a></h6>
                   <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 </header>
                 <p>{{ post.excerpt }}</p>
