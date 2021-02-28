@@ -663,4 +663,5 @@ footer p {
 #first.post-header {
 	min-height: 50%;
 	background-size: 100% auto;
+	background: no-repeat;
 }
