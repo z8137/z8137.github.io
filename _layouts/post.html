@@ -25,9 +25,7 @@ layout: default
     <div class="entry-content">
       {{ content }}
     </div>
-    <div class="row>">
 		 <div class="decoration"> {% if page.previous.url %}<a href="{{ page.previous.url }}" class="btn btn-default">&laquo; {{ page.previous.title }}</a>{% endif %} {% if page.next.url %}<a href="{{ page.next.url }}" class="btn btn-default">{{ page.next.title }} &raquo;</a>{% endif %} 
-		 </div>
 		 </div>
     <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ page.author }} On {{ page.date | date: "%B %d, %Y" }}</span>
       <ul class="text-center pull-right">
