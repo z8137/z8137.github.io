@@ -440,6 +440,7 @@ a.more-link:hover {
 .post .social-share {
 	border-top: 1px solid #EEE;
 	padding: 15px 0 75px;
+	margin-top:25px;
 }
 .social-share span a {
 	color: #333;
@@ -663,4 +664,7 @@ footer p {
 #first.post-header {
 	min-height: 50%;
 	background-size: 100% auto;
+}
+.decoration{
+	padding: 25px 0 0;
 }
