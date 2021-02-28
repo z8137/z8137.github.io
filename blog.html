@@ -5,15 +5,9 @@ title: Recent Posts
 <section id="recent">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1>Recent Posts</h1>
-        <hr class="small">
-      </div>
-    </div>
-    <div class="row">
           {% for post in site.posts %}
       <div class="col-md-8">
-        <article class="post">
+        <!--<article class="post">
           <div class="post-thumb"> <a href="{{ post.url }}"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
             <div class="text-uppercase text-center">View Post</div>
             </a> </div>
@@ -27,26 +21,28 @@ title: Recent Posts
             <div class="social-share"> <span class="social-share-title pull-left text-capitalize">{{ post.date | date: "%d %B %Y" }}</span> </div>
           </div>
         </article>
-        {% endfor %}
+        {% endfor %}-->
         <!-- /.blog-post -->
         <div class="row">
+         {% for post in site.posts %}
           <div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
-              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+              <div class="post-thumb"> <a href="{{ post.url }}"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
                 <div class="text-uppercase text-center">View Post</div>
                 </a> </div>
               <div class="post-content">
                 <header class="entry-header text-center text-uppercase">
                   <h6><a href="#">Trump</a></h6>
-                  <h1 class="entry-title"><a href="blog.html">More fake news about Donald Trump</a></h1>
+                  <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 </header>
-                <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                <p>{{ post.excerpt }}</p>
                 <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Obama On December 31, 2016</span> </div>
               </div>
             </article>
           </div>
+          {% endfor %}
           <!-- /.blog-post -->
-          <div class="col-md-6 wow" style=" visibility: hidden;">
+          <!--<div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
                 <div class="text-uppercase text-center">View Post</div>
@@ -61,7 +57,7 @@ title: Recent Posts
               </div>
             </article>
           </div>
-          <!-- /.blog-post -->
+           /.blog-post 
           <div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
@@ -77,7 +73,7 @@ title: Recent Posts
               </div>
             </article>
           </div>
-          <!-- /.blog-post -->
+           /.blog-post 
           <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
@@ -95,7 +91,7 @@ title: Recent Posts
               </div>
             </article>
           </div>
-          <!-- /.blog-post -->
+           /.blog-post 
           <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
@@ -115,7 +111,7 @@ title: Recent Posts
               </div>
             </article>
           </div>
-          <!-- /.blog-post -->
+           /.blog-post 
           <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
@@ -134,7 +130,7 @@ title: Recent Posts
                 </div>
               </div>
             </article>
-          </div>
+          </div>-->
           <!-- /.blog-post --> 
         </div>
         <ul class="pagination">
