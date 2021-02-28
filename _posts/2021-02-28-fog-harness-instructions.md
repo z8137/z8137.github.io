@@ -3,7 +3,7 @@ layout: post
 title: Honda Delsol Fog Light Harness Install
 category: Harness Instructions
 author: Zachary Wallenta
-thumbnail: https://placekitten.com/g/800/500
+thumbnail: https://placekitten.com/g/700/300
 ---
 
 Thank you for purchasing my products! Hopefully, these instructions help with the install, if any difficulties arise please feel free to contact me for support!
