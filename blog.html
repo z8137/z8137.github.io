@@ -5,7 +5,7 @@ title: Recent Posts
 <section id="recent">
   <div class="container">
     <div class="row">
-     <div class="col-sm-3 blog-sidebar col-xs-offset-1">
+     <div class="col-sm-3 blog-sidebar sidebar left-sidebar sidebar-small col-xs-offset-1">
         <div class="sidebar-module sidebar-module-inset">
           <h4>About</h4>
           <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -38,8 +38,9 @@ title: Recent Posts
       </div>
       <!-- /.blog-sidebar --> 
       {% for post in site.posts %}
-      <div class="col-md-8">
+      <div class="col-md-9">
         <article class="post">
+         <div class="">
           <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
             <div class="text-uppercase text-center">View Post</div>
             </a> </div>
@@ -52,8 +53,11 @@ title: Recent Posts
             <div class="btn-continue-reading text-center text-uppercase"> <a href="{{ post.url }}" class="more-link">Continue Reading</a> </div>
             <div class="social-share"> <span class="social-share-title pull-left text-capitalize">{{ post.date | date: "%B %d, %Y" }}</span> </div>
           </div>
+			</div>
         </article>
         <!-- /.blog-post -->
+		</div>
+       {% endfor %}
         <!--<div class="row">
          {% for post in site.posts %}
           <div class="col-md-6 wow" style=" visibility: hidden;">
@@ -163,20 +167,13 @@ title: Recent Posts
             </article>
           </div>-->
           <!-- /.blog-post --> 
-        </div>
-        {% endfor %}
-        <ul class="pagination">
+          <ul class="pagination">
 			<li><a href="#">1</a></li>
        <li><a href="#">2</a></li>
        <li><a href="#">3</a></li>
        <li><a href="#">4</a></li>
        <li><a href="#">5</a></li></ul>
         <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
-      </div>
-      <!-- /.blog-main -->
-    </div>
-    <!-- /.row --> 
-    
-  </div>
-  <!-- /.container --> 
+        </div><!-- end row -->
+      </div> <!-- end container -->
 </section>
