@@ -673,3 +673,11 @@ footer p {
 	padding: 25px 0 0;
 	
 }
+article.post {
+	-webkit-box-shadow: 0 0 1px 1px #e6e6e6;
+  	box-shadow: 0 0 1px 1px #e6e6e6;
+}
+.sidebar{
+	-webkit-box-shadow: 0 0 1px 1px #e6e6e6;
+  	box-shadow: 0 0 1px 1px #e6e6e6;
+}

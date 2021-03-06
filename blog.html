@@ -38,6 +38,7 @@ title: Recent Posts
       </div>
       <!-- /.blog-sidebar --> 
       <div class="col-md-8" >
+      <div class="row">
        {% for post in site.posts %}
         <article class="post wow fadeIn" style=" visibility: hidden;">
          <div class="">
@@ -56,7 +57,15 @@ title: Recent Posts
 			</div>
         </article>
         {% endfor %}
+		  </div>
         <!-- /.blog-post -->
+        <ul class="pagination">
+			<li><a href="#">1</a></li>
+       <li><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#">4</a></li>
+       <li><a href="#">5</a></li></ul>
+        <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
 		</div>
         <!--<div class="row">
          {% for post in site.posts %}
@@ -167,13 +176,7 @@ title: Recent Posts
             </article>
           </div>-->
           <!-- /.blog-post --> 
-          <ul class="pagination">
-			<li><a href="#">1</a></li>
-       <li><a href="#">2</a></li>
-       <li><a href="#">3</a></li>
-       <li><a href="#">4</a></li>
-       <li><a href="#">5</a></li></ul>
-        <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
+          
         </div><!-- end row -->
       </div> <!-- end container -->
 </section>
