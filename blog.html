@@ -37,6 +37,7 @@ title: Recent Posts
         </div>
       </div>
       <!-- /.blog-sidebar --> 
+      {% for post in site.posts %}
       <div class="col-md-8">
         <article class="post">
           <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
@@ -53,7 +54,7 @@ title: Recent Posts
           </div>
         </article>
         <!-- /.blog-post -->
-        <div class="row">
+        <!--<div class="row">
          {% for post in site.posts %}
           <div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
@@ -70,7 +71,7 @@ title: Recent Posts
               </div>
             </article>
           </div>
-          {% endfor %}
+          {% endfor %}-->
           <!-- /.blog-post -->
           <!--<div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
@@ -163,6 +164,7 @@ title: Recent Posts
           </div>-->
           <!-- /.blog-post --> 
         </div>
+        {% endfor %}
         <ul class="pagination">
 			<li><a href="#">1</a></li>
        <li><a href="#">2</a></li>
