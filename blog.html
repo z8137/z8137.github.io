@@ -37,9 +37,9 @@ title: Recent Posts
         </div>
       </div>
       <!-- /.blog-sidebar --> 
-      <div class="col-md-8 wow" style=" visibility: hidden;">
+      <div class="col-md-8" >
        {% for post in site.posts %}
-        <article class="post">
+        <article class="post wow fadeIn" style=" visibility: hidden;">
          <div class="">
           <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
             <div class="text-uppercase text-center">View Post</div>
