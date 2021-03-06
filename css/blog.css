@@ -665,6 +665,10 @@ footer p {
 	min-height: 50%;
 	background-size: 100% auto;
 }
+#page.post-header {
+	min-height: 30%;
+	background-size: 100% auto;
+}
 .decoration{
 	padding: 25px 0 0;
 	
