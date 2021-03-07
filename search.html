@@ -3,50 +3,11 @@ layout: page
 title: Search
 thumbnail: landing.jpg
 ---
-{% comment %}<div class="container">
-    <br/>
-    <div id="search-container">
-	<div class="row justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-8">
-                            <form class="card card-sm">
-                                <div class="card-body row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-search h4 text-body"></i>
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" id=="search-input" placeholder="Search and hit enter...">
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col-auto">
-                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
-                                    </div>
-                                    <!--end of col-->
-                                </div>
-                            </form>
-                        </div>
-                        <!--end of col-->
-                    </div>
-	<div class="row">
-		<div class="col-lg-8">
-			<ul id="results-container"></ul>
-		</div>
-	</div>
-	</div>
-</div>{% endcomment %}
-<div>
-          <form role="search" method="get" id="searchform" action="#">
-            <div id="search-container">
-              <input type="text" placeholder="Search and hit enter..." name="s" id="s">
-              <ul id="results-container"></ul>
-            </div>
-          </form>
-        </div>
 <!-- Html Elements for Search -->
-<!--<div id="search-container">
+<div id="search-container">
 <input type="text" id="search-input" placeholder="search...">
 <ul id="results-container"></ul>
-</div>-->
+</div>
 
 <!-- Script pointing to search-script.js -->
 <script src="{{ site.url }}/js/search-script.js" type="text/javascript"></script>
