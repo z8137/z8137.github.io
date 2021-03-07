@@ -311,4 +311,3 @@ jQuery( document ).ready(function($) {
 //            $("#instafeed4").html(imgs.slice(9, 10));
 //            $("#instafeed5").html(imgs.slice(10, 11));
 //        },
-
