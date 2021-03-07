@@ -633,7 +633,7 @@ footer p {
 	display: block;
 	z-index: 2;
 	background-size: inherit;
-	background-attachment: fixed;
+	background-attachment: inherit;
 	background-image: inherit;
 	width: 100%;
 	height: 100%;
@@ -664,11 +664,16 @@ footer p {
 
 #first.post-header {
 	min-height: 50%;
+	background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 #first.header-override {
 	min-height: 40%;
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
 }
 #first.header-override .header-content {
     top: 80%;
