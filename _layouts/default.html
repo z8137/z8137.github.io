@@ -128,11 +128,20 @@
     </div>
   </div>
 </footer>
-
+<!-- Search Function Options -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+var sjs = SimpleJekyllSearch({
+  	searchInput: document.getElementById('search-input'),
+  	resultsContainer: document.getElementById('results-container'),
+  	json: '{{ site.url }}/search.json',
+	noResultsText: ("No result found!")
+})
+</script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 <script src="/js/bootstrap.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="/js/scripts.js"></script> 

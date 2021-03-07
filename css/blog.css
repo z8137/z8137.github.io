@@ -694,3 +694,10 @@ a.more-link{
 .post .social-share{
 	    padding: 5px 0 50px;
 }
+.searchbar{
+    padding: 10px 13px;
+    border-radius: 0;
+    background: #FFF;
+    box-shadow: 0 5px 4px -4px rgb(190 190 190 / 10%);
+    border: 1px solid #eee;
+}
