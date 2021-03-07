@@ -77,29 +77,29 @@ thumbnail: oldsol-landing.jpg
 		</div>
        <!-- pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination">
+<ul class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+	<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
   {% else %}
-    <span>&laquo; Prev</span>
+		<span>&laquo; Prev</span></li>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-      <span class="webjeda">{{ page }}</span>
+     <li> <span class="webjeda">{{ page }}</span>
     {% elsif page == 1 %}
       <a href="/">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+		 <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
   {% else %}
-    <span>Next &raquo;</span>
+		<span>Next &raquo;</span></li>
   {% endif %}
-</div>
+</ul>
 {% endif %}
         <!--<div class="row">
          {% for post in site.posts %}
