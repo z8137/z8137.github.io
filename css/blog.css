@@ -670,7 +670,7 @@ footer p {
 	background-size: 100% auto;
 }
 .decoration{
-	padding: 25px 0 0;
+	padding: 15px 0 0;
 	
 }
 article.post {
@@ -680,4 +680,10 @@ article.post {
 .sidebar{
 	-webkit-box-shadow: 0 0 1px 1px #e6e6e6;
   	box-shadow: 0 0 1px 1px #e6e6e6;
+}
+a.more-link{
+	margin: 14px 0 18px;
+}
+.post .social-share{
+	    padding: 5px 0 50px;
 }
