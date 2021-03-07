@@ -669,7 +669,7 @@ footer p {
 	min-height: 40%;
 	background-size: 100% auto;
 }
-.page.header-content{
+.page .header-content{
 	top: 80%;
 }
 .decoration{
