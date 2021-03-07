@@ -4,7 +4,15 @@ title: Search
 thumbnail: landing.jpg
 ---
 
-
+<div class="top-search"> <a href="#" class="sactive"><i class="fa fa-search"></i></a> </div>
+<div class="show-search" style="display: block;">
+          <form role="search" method="get" id="searchform" action="#">
+            <div id="search-container">
+              <input type="text" placeholder="Search and hit enter..." name="s" id="search-input">
+              <ul id="results-container"></ul>
+            </div>
+          </form>
+        </div>
 <!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="search...">
