@@ -628,7 +628,7 @@ footer p {
 
 /* PAGE TOGGLE BULL SHIT */
 
-.post-header .page-header::before {
+.post-header::before, .page-header::before {
 	position: absolute;
 	display: block;
 	z-index: 2;
@@ -643,14 +643,14 @@ footer p {
 	filter: blur(3px);
 }
 
-.post-header .page-header {
+.post-header, .page-header {
 	position: relative;
 	z-index: 1;
 	width: 100%;
 	color: #fff;
 	text-align: center;
 }
-.post-header .page-header::after {
+.post-header::after, .page-header::after {
 	position: absolute;
 	display: block;
 	top: 0;
