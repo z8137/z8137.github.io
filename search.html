@@ -3,8 +3,38 @@ layout: page
 title: Search
 thumbnail: landing.jpg
 ---
-
-<div style="display: block;">
+<div class="container">
+    <br/>
+    <div id="search-container">
+	<div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" id=="search-input" placeholder="Search and hit enter...">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+	<div class="row">
+		<div class="col-lg-8">
+			<ul id="results-container"></ul>
+		</div>
+	</div>
+	</div>
+</div>
+<div>
           <form role="search" method="get" id="searchform" action="#">
             <div id="search-container">
               <input type="text" placeholder="Search and hit enter..." name="s" id="s">
@@ -24,7 +54,7 @@ thumbnail: landing.jpg
 <!-- Configuration -->
 <script>
 SimpleJekyllSearch({
-  searchInput: document.getElementById('s'),
+  searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '{{ site.url }}/search.json'
 })
