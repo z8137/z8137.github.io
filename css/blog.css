@@ -629,10 +629,10 @@ footer p {
 /* PAGE TOGGLE BULL SHIT */
 
 .post-header::before{
-	position: absolute;
+	position: inherit;
 	display: block;
 	z-index: 2;
-	background-size: cover;
+	background-size: inherit;
 	background-attachment: fixed;
 	background-image: inherit;
 	width: 100%;
@@ -668,6 +668,7 @@ footer p {
 #first.header-override {
 	min-height: 40%;
 	background-position: center;
+	background-size: cover;
 }
 #first.header-override .header-content {
     top: 80%;
