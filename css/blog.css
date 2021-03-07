@@ -628,7 +628,7 @@ footer p {
 
 /* PAGE TOGGLE BULL SHIT */
 
-.post-header::before,{
+.post-header::before{
 	position: absolute;
 	display: block;
 	z-index: 2;
@@ -644,7 +644,7 @@ footer p {
 	filter: blur(3px);
 }
 
-.post-header,{
+.post-header{
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -664,7 +664,6 @@ footer p {
 
 #first.post-header {
 	min-height: 50%;
-	background-size: 100% auto;
 }
 #first.header-override {
 	min-height: 40%;
