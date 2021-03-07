@@ -42,7 +42,7 @@ thumbnail: landing.jpg
       <h2>Custom search field</h2>
       <div id="custom-search-input">
         <div class="input-group col-md-12">
-          <input type="text" id="search-input" class="form-control input-lg" placeholder="Buscar" />
+          <input type="text" id="search-input" class="form-control input-lg" placeholder="Search and hit enter..." />
         </div>
         <span class="input-group-btn">
         <button class="btn btn-info btn-lg" type="button"> <i class="glyphicon glyphicon-search"></i> </button>
@@ -65,7 +65,6 @@ SimpleJekyllSearch({
   	searchInput: document.getElementById('search-input'),
   	resultsContainer: document.getElementById('results-container'),
   	json: '{{ site.url }}/search.json',
-	searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>',
 	noResultsText: ("No result found!")
 })
 </script>
