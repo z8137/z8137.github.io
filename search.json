@@ -7,9 +7,9 @@
       "title"    : "{{ post.title | escape }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "category" : "{{ post.category }}",
-	{{% comment %}}
+	{% comment %}
       "tags"     : "{{ post.tags | join: ', ' }}",
-	{{% endcomment %}}
+	{% endcomment %}
       "date"     : "{{ post.date }}"
 
     } {% unless forloop.last %},{% endunless %}
