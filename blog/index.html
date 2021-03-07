@@ -1,0 +1,216 @@
+---
+layout: page
+title: Recent Posts
+thumbnail: oldsol-landing.jpg
+---
+<section id="recent">
+    <div class="row">
+     <div class="col-sm-3 blog-sidebar sidebar">
+        <div class="sidebar-module sidebar-module-inset">
+          <h4>About</h4>
+          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        </div>
+        <div class="sidebar-module">
+          <h4>Archives</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">March 2014</a></li>
+            <li><a href="#">February 2014</a></li>
+            <li><a href="#">January 2014</a></li>
+            <li><a href="#">December 2013</a></li>
+            <li><a href="#">November 2013</a></li>
+            <li><a href="#">October 2013</a></li>
+            <li><a href="#">September 2013</a></li>
+            <li><a href="#">August 2013</a></li>
+            <li><a href="#">July 2013</a></li>
+            <li><a href="#">June 2013</a></li>
+            <li><a href="#">May 2013</a></li>
+            <li><a href="#">April 2013</a></li>
+          </ol>
+        </div>
+        <div class="sidebar-module">
+          <h4>Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+      <!-- /.blog-sidebar --> 
+      <div class="col-md-8 col-xs-offset-1">
+      <div class="row">
+       {% for post in paginator.posts %}
+        <article class="post wow fadeIn" style=" visibility: hidden;">
+         <div class="">
+          <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
+            <div class="text-uppercase text-center">View Post</div>
+            </a> </div>
+          <div class="post-content">
+            <header class="entry-header text-center text-uppercase">
+              <h6>{% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}</h6>
+              <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
+            <p>{{ post.excerpt }}</p>
+            <div class="btn-continue-reading text-center text-uppercase"> <a href="{{ post.url }}" class="more-link">Continue Reading</a> </div>
+            <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ post.author }} On {{ post.date | date: "%B %d, %Y" }}</span> </div>
+          </div>
+			</div>
+        </article>
+        {% endfor %}
+		  </div>
+        <!-- /.blog-post -->
+        <ul class="pagination">
+			<li><a href="#">1</a></li>
+       <li><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#">4</a></li>
+       <li><a href="#">5</a></li></ul>
+        <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
+		</div>
+       <!-- pagination -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+        <!--<div class="row">
+         {% for post in site.posts %}
+          <div class="col-md-6 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="">{{ post.category }}</a></h6>
+                  <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                </header>
+                <p>{{ post.excerpt }}</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ post.author }} On {{ post.date | date: "%B %d, %Y" }}</span> </div>
+              </div>
+            </article>
+          </div>
+          {% endfor %}-->
+          <!-- /.blog-post -->
+          <!--<div class="col-md-6 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">Killary</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">How Hillary killed Harambe 2k16</a></h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Killary On April 20, 2017</span> </div>
+              </div>
+            </article>
+          </div>
+           /.blog-post 
+          <div class="col-md-6 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">Killary</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Video proof that Hillary killed Harambe</a></h1>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Harambe On July 4, 2017</span> </div>
+              </div>
+            </article>
+          </div>
+           /.blog-post 
+          <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="blog.html" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">#ghettoasfuck</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Waterbury thief gets beat up inside Mall foodcourt</a></h1>
+                </header>
+                <div class="entry-content">
+                  <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo dlores rebum. Stet clita kasd gubergren</p>
+                  <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By iDoctor On January 11, 2017</span> </div>
+                </div>
+              </div>
+            </article>
+          </div>
+           /.blog-post 
+          <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">General Gibberish</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Your mom is my dot com</a></h1>
+                </header>
+                <div class="entry-content">
+                  <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore
+                    et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo
+                    dlores rebum. Stet clita kasd gubergren </p>
+                  <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Yourmom.com On February 12, 2016</span> </div>
+                </div>
+              </div>
+            </article>
+          </div>
+           /.blog-post 
+          <div class="col-md-6 wow fadeIn" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="blog.html"><img src="https://placekitten.com/g/800/500" alt=""></a> <a href="#" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6><a href="#">Stupid Lung Shit</a></h6>
+                  <h1 class="entry-title"><a href="blog.html">Pnuemothorax common in white, tall, young and skinny males</a></h1>
+                </header>
+                <div class="entry-content">
+                  <p>Lorem ipsum dolor sit amet, consadipsing elitr, sed diam nonumy eirmod tevidubore
+                    et dolore magna aliquyam erat, sevolutua. At vero eos et accusam et justo duo
+                    dlores rebum. Stet clita kasd gubergren </p>
+                  <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Zach W. On January 23, 2016</span> </div>
+                </div>
+              </div>
+            </article>
+          </div>-->
+          <!-- /.blog-post --> 
+          
+        </div><!-- end row -->
+    <!-- end container -->
+</section>
