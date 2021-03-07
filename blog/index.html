@@ -79,7 +79,7 @@ thumbnail: oldsol-landing.jpg
     {% if page == paginator.page %}
 	<li> <span class="disabled">{{ page }}</span></li>
     {% elsif page == 1 %}
-	<li><a href="{{ site.paginate_path }}">{{ page }}</a></li>
+	<li><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
     {% else %}
 		 <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
