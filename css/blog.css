@@ -628,7 +628,7 @@ footer p {
 
 /* PAGE TOGGLE BULL SHIT */
 
-.post-header::before {
+.post-header .page-header::before {
 	position: absolute;
 	display: block;
 	z-index: 2;
@@ -643,14 +643,14 @@ footer p {
 	filter: blur(3px);
 }
 
-.post-header {
+.post-header .page-header {
 	position: relative;
 	z-index: 1;
 	width: 100%;
 	color: #fff;
 	text-align: center;
 }
-.post-header::after {
+.post-header .page-header::after {
 	position: absolute;
 	display: block;
 	top: 0;
@@ -665,11 +665,11 @@ footer p {
 	min-height: 50%;
 	background-size: 100% auto;
 }
-#first.page {
+#first.page-header {
 	min-height: 40%;
 	background-size: 100% auto;
 }
-.page .header-content{
+#first .header-content{
 	top: 80%;
 }
 .decoration{
