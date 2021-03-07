@@ -74,9 +74,7 @@ thumbnail: oldsol-landing.jpg
        <li><a href="#">4</a></li>
        <li><a href="#">5</a></li></ul>
         <nav class="blog-pagination"> <a class="btn btn-outline-primary" href="#">Older</a> <a class="btn btn-outline-secondary disabled" href="#">Newer</a> </nav>
-		</div>
-       <!-- pagination -->
-{% if paginator.total_pages > 1 %}
+        {% if paginator.total_pages > 1 %}
 <ul class="pagination">
   {% if paginator.previous_page %}
 	<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
@@ -101,6 +99,8 @@ thumbnail: oldsol-landing.jpg
   {% endif %}
 </ul>
 {% endif %}
+		</div>
+       <!-- pagination -->
         <!--<div class="row">
          {% for post in site.posts %}
           <div class="col-md-6 wow" style=" visibility: hidden;">
