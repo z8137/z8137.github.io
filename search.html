@@ -7,7 +7,7 @@ thumbnail: landing.jpg
 <div style="display: block;">
           <form role="search" method="get" id="searchform" action="#">
             <div id="search-container">
-              <input type="text" placeholder="Search and hit enter..." name="s" id="search-input">
+              <input type="text" placeholder="Search and hit enter..." name="s" id="s">
               <ul id="results-container"></ul>
             </div>
           </form>
@@ -24,7 +24,7 @@ thumbnail: landing.jpg
 <!-- Configuration -->
 <script>
 SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
+  searchInput: document.getElementById('s'),
   resultsContainer: document.getElementById('results-container'),
   json: '{{ site.url }}/search.json'
 })
