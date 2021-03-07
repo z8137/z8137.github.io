@@ -5,7 +5,7 @@ title: Recent Posts
 <section id="recent">
   <div class="container">
     <div class="row">
-     <div class="col-sm-3 blog-sidebar sidebar left-sidebar sidebar-small col-xs-offset-1">
+     <div class="col-sm-3 blog-sidebar sidebar">
         <div class="sidebar-module sidebar-module-inset">
           <h4>About</h4>
           <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
@@ -37,7 +37,7 @@ title: Recent Posts
         </div>
       </div>
       <!-- /.blog-sidebar --> 
-      <div class="col-md-8" >
+      <div class="col-md-8 col-xs-offset-1">
       <div class="row">
        {% for post in site.posts %}
         <article class="post wow fadeIn" style=" visibility: hidden;">

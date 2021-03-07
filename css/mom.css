@@ -489,7 +489,11 @@ pagination
 /*==========
 sidebar
 ===========*/
-
+.sidebar aside {
+    padding: 25px 20px 30px 20px;
+    border-top: 1px solid #eeeeee;
+    position: relative;
+	
 /*=======
 about me
 ========*/
