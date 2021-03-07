@@ -669,8 +669,8 @@ footer p {
 	min-height: 40%;
 	background-size: 100% auto;
 }
-#first .header-content{
-	top: 80%;
+#first.page-header .header-content {
+    top: 80%;
 }
 .decoration{
 	padding: 15px 0 0;
