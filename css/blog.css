@@ -633,7 +633,6 @@ footer p {
 	display: block;
 	z-index: 2;
 	background-size: inherit;
-	background-attachment: fixed;
 	background-image: inherit;
 	background-size: cover;
 	background-position: inherit;
