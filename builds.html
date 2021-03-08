@@ -3,7 +3,7 @@ layout: page
 permalink: /builds/
 title: Solless Builds
 thumbnail: categories.jpg
-category_name: builds
+sub_category_name: builds
 ---
 
 <div id="archives">
@@ -13,9 +13,9 @@ category_name: builds
     <div id="#{{ category_name | slugize }}"></div>
     <p></p>
 
-    <h3 class="category-head">{{ category_name }}</h3>
+    <h3 class="category-head">{{ sub_category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories.{{ category_name }} %}
+    {% for post in site.categories.{{ sub_category_name }} %}
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
     </article>
