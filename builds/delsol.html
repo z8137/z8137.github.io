@@ -1,0 +1,19 @@
+---
+layout: page
+permalink: /delsol/
+title: My 1994 Honda Del Sol
+thumbnail: categories.jpg
+sub-category: DelSol
+---
+
+<div id="archives">
+    <p></p>
+
+    <h3 class="category-head">{{ page.sub-category }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories['{{ page.sub-category }}'] %}
+    <article class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
