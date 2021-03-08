@@ -32,7 +32,6 @@ layout: page
                 {% for post in site.categories[page.category_name] %}
                 <!-- NEW STUFF -->
         <article class="post wow fadeIn" style=" visibility: hidden;">
-         <div class="">
           <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
             <div class="text-uppercase text-center">View Post</div>
             </a> </div>
@@ -53,7 +52,6 @@ layout: page
             <div class="btn-continue-reading text-center text-uppercase"> <a href="{{ post.url }}" class="more-link">Continue Reading</a> </div>
             <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ post.author }} On {{ post.date | date: "%B %d, %Y" }}</span> </div>
           </div>
-			</div>
         </article>
                 {% endfor %}
                 {% else %}
