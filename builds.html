@@ -7,7 +7,7 @@ sub_category_name: builds
 ---
 
 <div id="archives">
-{% for category in site.categories["{{ sub_category_name }}"] %}
+{% for category in site.categories.["{{ sub_category_name }}"] %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
@@ -15,7 +15,7 @@ sub_category_name: builds
 
     <h3 class="category-head">{{ sub_category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories["{{ sub_category_name }}"] %}
+    {% for post in site.categories.["{{ sub_category_name }}"] %}
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
     </article>
