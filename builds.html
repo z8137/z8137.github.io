@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: category
 permalink: /builds/
 title: Solless Builds
 thumbnail: categories.jpg
+category_name: Builds
 ---
 
 <section id="info" class="bg-primary">
@@ -44,7 +45,7 @@ thumbnail: categories.jpg
   </div>
 </section>
 <div id="archives">
-{% for category in site.categories.builds %}
+{% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
