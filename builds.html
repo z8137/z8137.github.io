@@ -1,19 +1,90 @@
 ---
 layout: page
 permalink: /builds/
-title: Solless Builds
+title: The Solless Garage and Friends
 thumbnail: categories.jpg
 sub-category: builds
 ---
-
-<div id="archives">
-    <p></p>
-
-    <h3 class="category-head">{{ page.sub-category }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories.builds %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
+<section id="info" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Current Projects</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore dicta.</p>
+      </div>
+    </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 fadeInLeft">
+        <div class="media">
+          <div class="media-middle"> <a href="#"><img class="media-object thumbnail" src="https://placekitten.com/g/350/200" alt="..." /></a></div>
+          <div class="media-body">
+            <h2 class="media-heading">Honda Del Sol #4</h2>
+            Primed and ready to be whored around, this Sol takes on a journey that many have probably seen previously. Turning a car noob into a Honda Spivic mastermind over the course of a year. Cus you know, we need some filler text here to display stupid shit that people won't like.</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 fadeInDown">
+        <div class="media">
+          <div class="media-middle"> <a href="#"> <img class="media-object thumbnail" src="https://placekitten.com/g/350/200" alt="..."> </a> </div>
+          <div class="media-body">
+            <h2 class="media-heading">1990 Mazda RX7 Convertible</h2>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 fadeInRight">
+        <div class="media">
+          <div class="media-middle"> <a href="#"> <img class="media-object thumbnail" src="https://placekitten.com/g/350/200" alt="..."></a></div>
+          <div class="media-body">
+            <h2 class="media-heading">2015 Kia Optima SX-T</h2>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="row">
+  <div class="col-lg-12 text-center">
+    <h1>Recent Posts</h1>
+    <hr class="small">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div clas="row">
+     {% for post in site.categories.builds %}
+      <div class="col-md-4 wow" style=" visibility: hidden;">
+            <article class="post post-grid">
+              <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
+                <div class="text-uppercase text-center">View Post</div>
+                </a> </div>
+              <div class="post-content">
+                <header class="entry-header text-center text-uppercase">
+                  <h6>{% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}</h6>
+                  <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                </header>
+                <p>{{ post.excerpt }}</p>
+                <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By Obama On December 31, 2016</span> </div>
+              </div>
+            </article>
+          </div>
+          {% endfor %}
+    </div>
+  </div>
+</div>
+<div id="archives">
+  <p></p>
+  <h3 class="category-head">{{ page.sub-category }}</h3>
+  <a name="{{ category_name | slugize }}"></a> {% for post in site.categories.builds %}
+  <article class="archive-item">
+    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+  </article>
+  {% endfor %} </div>
