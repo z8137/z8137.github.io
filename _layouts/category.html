@@ -2,6 +2,7 @@
 layout: page
 ---
 
+{% comment %}
 {% if page.background %}
 <header class="masthead"
     style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -22,19 +23,38 @@ layout: page
             </div>
         </div>
     </header>
+    {% endcomment%}
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2>{{page.category_name}} Posts</h2>
                 {% if site.categories[page.category_name] %}
                 {% for post in site.categories[page.category_name] %}
-                <div class="card">
-                    <a href="{{ site.baseurl }}{{ post.url }}" class="container">
-                        <h4><strong>{{post.title}}</strong></h4>
-                        <p><strong>{{ post.subtitle }}</strong></p>
-                        <p>{{ post.excerpt | strip_html | truncatewords: 60 }}</p>
-                    </a>
-                </div>
+                <!-- NEW STUFF -->
+        <article class="post wow fadeIn" style=" visibility: hidden;">
+         <div class="">
+          <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
+            <div class="text-uppercase text-center">View Post</div>
+            </a> </div>
+          <div class="post-content">
+            <header class="entry-header text-center text-uppercase">
+              <h6>{% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}</h6>
+              <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
+            <p>{{ post.excerpt }}</p>
+            <div class="btn-continue-reading text-center text-uppercase"> <a href="{{ post.url }}" class="more-link">Continue Reading</a> </div>
+            <div class="social-share"> <span class="social-share-title pull-left text-capitalize">By {{ post.author }} On {{ post.date | date: "%B %d, %Y" }}</span> </div>
+          </div>
+			</div>
+        </article>
                 {% endfor %}
                 {% else %}
                 <br>
