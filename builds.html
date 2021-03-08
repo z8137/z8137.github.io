@@ -3,49 +3,11 @@ layout: page
 permalink: /builds/
 title: Solless Builds
 thumbnail: categories.jpg
-category_name: Builds
+category_name: builds
 ---
 
-<section id="info" class="bg-primary">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1>Current Projects</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore dicta.</p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6 fadeInLeft">
-        <div class="media">
-          <div class="media-middle"> <a href="#"><img class="media-object thumbnail" src="https://placekitten.com/g/350/200" alt="..." /></a></div>
-          <div class="media-body">
-            <h2 class="media-heading">Honda Del Sol #4</h2>
-            Primed and ready to be whored around, this Sol takes on a journey that many have probably seen previously. Turning a car noob into a Honda Spivic mastermind over the course of a year. Cus you know, we need some filler text here to display stupid shit that people won't like.</div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 fadeInDown">
-        <div class="media">
-          <div class="media-middle"> <a href="#"> <img class="media-object thumbnail" src="https://placekitten.com/g/350/200" alt="..."> </a> </div>
-          <div class="media-body">
-            <h2 class="media-heading">1990 Mazda RX7 Convertible</h2>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 fadeInRight">
-        <div class="media">
-          <div class="media-middle"> <a href="#"> <img class="media-object thumbnail" src="https://placekitten.com/g/350/200" alt="..."></a></div>
-          <div class="media-body">
-            <h2 class="media-heading">2015 Kia Optima SX-T</h2>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <div id="archives">
-{% for category in site.categories %}
+{% for category in site.categories.{{ category_name }} %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
