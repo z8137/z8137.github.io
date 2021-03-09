@@ -5,7 +5,7 @@ layout: page
 {% comment %}
 {% if page.background %}
 <header class="masthead"
-    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+		style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')"></header>
     {% else %}
     <header class="masthead">
         {% endif %}
@@ -24,6 +24,7 @@ layout: page
         </div>
     </header>
     {% endcomment%}
+    <section id="builds">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
@@ -31,7 +32,8 @@ layout: page
                 {% if site.categories[page.category_name] %}
                 {% for post in site.categories[page.category_name] %}
                 <!-- NEW STUFF -->
-        <article class="post wow fadeIn" style=" visibility: hidden;">
+        
+         <article class="post wow fadeIn" style=" visibility: hidden;">
           <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
             <div class="text-uppercase text-center">View Post</div>
             </a> </div>
@@ -62,3 +64,4 @@ layout: page
             </div>
         </div>
     </div>
+	</section>
