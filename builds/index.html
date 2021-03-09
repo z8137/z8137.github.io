@@ -6,15 +6,15 @@ thumbnail: categories.jpg
 sub-category: builds
 ---
 <section id="info" class="bg-primary">
-   <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1>Current Projects</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore dicta.</p>
       </div>
     </div>
-	</div>
-   <div class="container">
+  </div>
+  <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-6 fadeInLeft">
         <div class="media">
@@ -41,19 +41,20 @@ sub-category: builds
         </div>
       </div>
     </div>
-	</div>
-</section>
-<div class="row">
-  <div class="col-lg-12 text-center">
-    <h1>Recent Posts</h1>
-    <hr class="small">
   </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <div clas="row">
-     {% for post in site.categories.builds %}
-      <div class="col-md-6 wow" style=" visibility: hidden;">
+</section>
+<section id="build-posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Recent Posts</h1>
+        <hr class="small">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div clas="row"> {% for post in site.categories.builds %}
+          <div class="col-md-6 wow" style=" visibility: hidden;">
             <article class="post post-grid">
               <div class="post-thumb"> <a href="{{ post.url }}"><img src="{{ post.thumbnail }}" alt=""></a> <a href="{{ post.url }}" class="post-thumb-overlay text-center">
                 <div class="text-uppercase text-center">View Post</div>
@@ -61,14 +62,12 @@ sub-category: builds
               <div class="post-content">
                 <header class="entry-header text-center text-uppercase">
                   <h6>{% if post %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-  {% endif %}
-  {% for category in categories %}
-  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}</h6>
+                    {% assign categories = post.categories %}
+                    {% else %}
+                    {% assign categories = page.categories %}
+                    {% endif %}
+                    {% for category in categories %} <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a> {% unless forloop.last %}&nbsp;{% endunless %}
+                    {% endfor %}</h6>
                   <h1 class="entry-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 </header>
                 <p>{{ post.excerpt }}</p>
@@ -76,15 +75,16 @@ sub-category: builds
               </div>
             </article>
           </div>
-          {% endfor %}
+          {% endfor %} </div>
+      </div>
     </div>
+    <div id="archives">
+      <p></p>
+      <h3 class="category-head">{{ page.sub-category }}</h3>
+      <a name="{{ category_name | slugize }}"></a> {% for post in site.categories.builds %}
+      <article class="archive-item">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      </article>
+      {% endfor %} </div>
   </div>
-</div>
-<div id="archives">
-  <p></p>
-  <h3 class="category-head">{{ page.sub-category }}</h3>
-  <a name="{{ category_name | slugize }}"></a> {% for post in site.categories.builds %}
-  <article class="archive-item">
-    <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-  </article>
-  {% endfor %} </div>
+</section>
