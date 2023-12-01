@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Beyond Borders: The Epic Journey of Jeff Turtle in the Ever-Expanding World of GeckoRP
+title: Beyond Borders - The Epic Journey of Jeff Turtle in the Ever-Expanding World of GeckoRP
 category: General Gibberish
 author: Jeff Turtle
 thumbnail: https://placekitten.com/g/1920/1080
