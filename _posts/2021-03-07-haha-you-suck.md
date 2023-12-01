@@ -2,7 +2,7 @@
 layout: post
 title: THIS IS HOW ITS DONE
 category: Harness Instructions
-author: Zachary Wallenta
+author: Zach
 thumbnail: https://placekitten.com/1440/1080
 ---
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
