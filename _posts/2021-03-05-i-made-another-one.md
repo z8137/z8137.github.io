@@ -2,7 +2,7 @@
 layout: post
 title: Does pagination work now?
 category: Trump
-author: Zachary Wallenta
+author: Zach
 thumbnail: https://placekitten.com/3840/1920
 ---
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
